@@ -2,6 +2,8 @@
 <html>
     <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width-device-width, initial-scale=1.0">
+      <link rel="shortcut icon" type="image/icon" href="../imagenes/favicon.ico"/>
       <title>Contacto</title>
     </head>
     <body style="background-color:black;">
@@ -37,7 +39,7 @@
       <font color ="white" face="Times New Roman" size="4">
         <ul align="left">
           <li type="disc"><u>Tlf:954 77 90 80</u></li>
-          <li type="disc"><u>>Correo Electrónico:
+          <li type="disc"><u>Correo Electrónico:
             <a href="mailto:joseluislagon99@gmail.com">luigi´s@gmail.com</a></u>
           </li>
           <li type="disc">Fax:954777777</li>
@@ -54,42 +56,39 @@
         <form name="enviar" action="insertaregistro.php" method="post">
         <fieldset>
           <legend>Datos</legend>
-          <p><u>Nombre</u>
+          <label for="Nombre"><u>Nombre</u>
           <br/>
-          <input type="name" name="nombre" tabindex="1" required/>
+          <label></label><input type="name" name="nombre" id="Nombre" tabindex="1" required/>
           </input>
-        </p>
-        <p><u>Apellidos</u>
+        </br>
+        <label for="Apellido"><u>Apellido</u></label>
           <br/>
-            <input type="name" name="apellidos" tabindex="2" required/>
-        </p>
+            <input type="name" name="apellidos" id="Apellido" tabindex="2" required/>
         <p><u>Sexo</u>
           <br/>
           <input type="checkbox" name="hombre" tabindex="3"/>Hombre
           <input type="checkbox" name="mujer" tabindex="4"/>Mujer
         </p>
-        <p><u>DNI</u>
+        <label for="DNI"><u>DNI</u></label>
           <br/>
-          <input type="name" name="DNI" tabindex="5" required/>
-        </p>
+          <input type="name" name="DNI" id="DNI" tabindex="5" required/>
         <p><u>Foto</u>
           <br/>
             <input name="uploadedfile" type="file" tabindex="6" required/>
           </br>
         </p>
-        <p><u>Estudios</u>
+        <label for="estudios"><u>Estudios</u></label>
           <br/>
-            <input type="name" name="estudios" tabindex="7" required/>
-        </p>
-        </p>
-        <p><u>Fecha Nacimiento</u>
+            <input type="name" name="estudios" id="estudios" tabindex="7" required/>
+      </br>
+        <label for="fecha"><u>Fecha Nacimiento</u></label>
           <br/>
-            <input type="date" name="fecha nacimiento" tabindex="9" required/>
-        </p>
-        <p><u>Telefono</u>
+            <input type="date" name="fecha nacimiento" id="fecha" tabindex="9" required/>
+    </br>
+        <label for="telefono"><u>Telefono</u></label>
           <br/>
-            <input type="number" name="Telefono" tabindex="10" required/>
-        </p>
+            <input type="number" name="Telefono" id="telefono" tabindex="10" required/>
+  </br>
           <input type="submit">
       </fieldset>
       </form>
